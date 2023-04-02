@@ -1,0 +1,71 @@
+@import '../styles/icons.scss';
+@import '../styles/null.scss';
+@import '../styles/header.scss';
+@import '../styles/catalog.scss';
+@import '../styles/bread-crumbs.scss';
+@import '../styles/pagination.scss';
+@import '../styles/footer.scss';
+@import '../styles/card.scss';
+@import '../styles/modal.scss';
+@import '../styles/basket.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+//<Шрифт по умолчанию>===========================>
+$fontFamaly: "Inter", sans-serif;
+$fontSize: "14px";
+//</Шрифт по умолчанию>===========================>
+
+
+//<Переменные>=======================================>
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1400;
+$md1: $maxWidthContainer + 12;
+$md2: 1027.98;
+$md3: 991.98;
+$md4: 767.98;
+$md5: 479.98;
+
+//</Переменные>=======================================>
+
+
+
+//<Основная сетка>=======================================>
+body {
+    font-family: $fontFamaly;
+    font-size: $fontSize;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: $maxWidthContainer + 12px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media (max-width:$md2+px) {
+        max-width: 970px;
+    }
+
+    @media (max-width:$md3+px) {
+        max-width: 760px;
+    }
+
+    @media (max-width:$md4+px) {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+
+.page {
+    flex: 1 1 auto;
+}

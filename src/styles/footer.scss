@@ -1,0 +1,357 @@
+$md4: 767.98;
+$md5: 479.98;
+
+.footer {
+    padding: 70px 0 115px;
+    background: #3F4E65;
+    color: #FFFFFF;
+
+    @media (max-width:$md4+px) {
+        padding: 15px 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__about {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        @media (max-width:$md5+px) {
+            margin-right: 0px;
+            width: 100%;
+        }
+    }
+
+    &__menu {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        @media (max-width:$md5+px) {
+            margin-right: 0px;
+        }
+    }
+
+    &__category {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        @media (max-width:$md5+px) {
+            margin-right: 0px;
+        }
+    }
+
+    &__download {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        @media (max-width:$md5+px) {
+            margin-right: 0px;
+        }
+
+    }
+
+    &__contact {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+.about-footer {
+    width: 320px;
+
+    @media (max-width:$md5+px) {
+        width: 100%;
+    }
+
+    &__logo {
+        margin-bottom: 15px;
+
+        img {
+            @media (max-width:$md5+px) {
+                width: 97px;
+            }
+        }
+
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        display: none;
+
+        @media (max-width:$md5+px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFC85E;
+            border-radius: 79px;
+            width: 149px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+
+            span {
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-top: 2px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 45px;
+
+        @media (max-width:$md5+px) {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+    }
+
+    &__lable {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        margin-bottom: 14px;
+    }
+
+    &__block-input {
+        position: relative;
+        width: 282px;
+
+        @media (max-width:$md5+px) {
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 59px;
+        background: #FFFFFF;
+        border-radius: 36px;
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #5C6370;
+    }
+
+    &__icon {
+        width: 39px;
+        height: 39px;
+        background: #FFC85E;
+        border-radius: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+}
+
+.menu-footer {
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+
+        @media (max-width:$md5+px) {
+            font-size: 12px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+.download-footer {
+    @media (max-width:$md5+px) {
+        display: none;
+    }
+
+    &__btn {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFC85E;
+        border-radius: 79px;
+        width: 200px;
+        height: 59px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+
+
+        span {
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 2px;
+            font-size: 15px;
+        }
+    }
+
+    &__lable {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 15px;
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        border-radius: 100%;
+        color: #FFFFFF;
+        font-size: 20px;
+        margin-right: 10px;
+
+        &-green {
+            background: #00E676;
+        }
+
+        &-blue {
+            background: #40B3E0;
+            margin-right: 0px;
+        }
+    }
+
+}
+
+.contact-footer {
+    @media (max-width:$md5+px) {
+        width: 100%;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 5px;
+    }
+
+    &__time {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        margin-bottom: 5px;
+    }
+
+    &__order {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        background: transparent;
+        margin-bottom: 25px;
+    }
+
+    &__block {
+        margin-bottom: 25px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        h4 {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__images {
+        display: flex;
+
+        a {
+            width: 61px;
+            height: 39px;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-mastercard {
+            background: #0F3560;
+        }
+
+        &-visa {
+            background: #00579F;
+
+        }
+    }
+
+    &__left {
+        @media (max-width:$md5+px) {
+            margin-right: 10px;
+            width: 100%;
+
+        }
+    }
+
+    &__right {
+        display: none;
+
+        @media (max-width:$md5+px) {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            text-align: right;
+        }
+    }
+}

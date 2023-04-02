@@ -1,0 +1,25 @@
+$md4: 767.98;
+
+.bread-crumbs {
+    margin-top: 45px;
+
+    @media (max-width:$md4+px) {
+        display: none;
+    }
+
+    &__title {
+        span:not(:last-child) {
+            padding-right: 10px;
+            border-right: 1px dashed #3F4E65;
+            margin-right: 10px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 120%;
+            color: #3F4E65;
+        }
+
+        span:last-child {
+            opacity: 0.5;
+        }
+    }
+}

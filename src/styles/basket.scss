@@ -1,0 +1,231 @@
+$md3: 991.98;
+$md4: 767.98;
+$md5: 479.98;
+
+.basket {
+    padding: 50px 0 100px;
+    color: #111111;
+
+    @media (max-width:$md4+px) {
+        padding: 50px 0 50px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        border-bottom: 1px dashed #3F4E65;
+
+        @media (max-width:$md4+px) {
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+
+    &__lable {
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+
+    &__body {
+        margin-bottom: 50px;
+
+        @media (max-width:$md5+px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:$md5+px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFC85E;
+        border-radius: 79px;
+        width: 192px;
+        height: 59px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+
+        @media (max-width:$md5+px) {
+            width: 100%;
+        }
+    }
+
+    &__sum {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+
+        @media (max-width:$md5+px) {
+            margin-bottom: 25px;
+        }
+
+    }
+
+}
+
+
+.item-basket {
+    display: flex;
+    padding: 50px 0;
+    border-bottom: 1px dashed #3F4E65;
+
+    @media (max-width:$md4+px) {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    &__img {
+        flex: 0 0 281px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+
+        @media (max-width:$md4+px) {
+            margin-right: 0px;
+            margin-bottom: 10px;
+            max-height: 197px;
+        }
+
+        img {
+            max-width: 281px;
+            max-height: 191px;
+        }
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #3F4E65;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 480px;
+        margin-right: 125px;
+
+        @media (max-width:$md3+px) {
+            margin-right: 40px;
+
+        }
+    }
+
+    &__size-info {
+        display: flex;
+        margin-bottom: 9px;
+        align-items: center;
+    }
+
+    &__icon {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    &__fullname {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #111111;
+        margin-bottom: 10px;
+
+        @media (max-width:$md4+px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        color: #3F4E65;
+    }
+
+    &__price-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @media (max-width:$md3+px) {
+            justify-content: center;
+        }
+
+        @media (max-width:$md4+px) {
+            justify-content: space-between;
+        }
+
+    }
+
+    &__price {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 130%;
+        color: #111111;
+
+        @media (max-width:$md4+px) {
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+
+        &-btn {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #3F4E65;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+            border-radius: 1000px;
+            width: 34px;
+            height: 23px;
+        }
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #3F4E65;
+        padding: 0 20px;
+    }
+
+    &__btn {
+        width: 59px;
+        height: 59px;
+        background: #FFC85E;
+        border-radius: 79px;
+        color: #FFFFFF;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

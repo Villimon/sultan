@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        color: #FFC85E;
+        font-size: 20px;
+    }
+
+    &__list {
+        display: flex;
+        padding: 0 35px;
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #3F4E65;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+
+        &.active {
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+            border-radius: 1000px;
+        }
+    }
+}
