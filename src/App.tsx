@@ -15,21 +15,19 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-      <div className="wrapper">
-        <Header />
-        <main className="page">
-          <Routes>
-            <Route path='/' element={<Catalog />} />
-            <Route path='/edit' element={<Catalog />} />
-            <Route path='/product/:id' element={<Card />} />
-            <Route path='/basket' element={<Basket />} />
-            <Route path='*' element={<Navigate to='/' />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div >
-    </BrowserRouter>
+    <div className="wrapper">
+      <Header />
+      <main className="page">
+        <Routes>
+          <Route path='/' element={<Catalog />} />
+          <Route path='/edit' element={<Catalog />} />
+          <Route path='/product/:id' element={<Card />} />
+          <Route path='/basket' element={<Basket />} />
+          <Route path='*' element={<Navigate to='/' />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div >
   );
 }
 

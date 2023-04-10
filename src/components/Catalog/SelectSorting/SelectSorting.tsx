@@ -22,7 +22,7 @@ const SelectSorting: React.FC<PropsType> = ({ style, options, selectValue, setSe
                 value={selectValue}
                 onChange={(e) => setSelectValue(e.target.value)}
             >
-                <option selected={true} >Сортировка</option>
+                <option defaultValue="Сортировка" >Сортировка</option>
                 {options.map(option =>
                     <option
                         key={option.id}

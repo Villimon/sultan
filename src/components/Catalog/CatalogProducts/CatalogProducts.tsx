@@ -416,6 +416,7 @@ const CatalogProducts: React.FC<PropsType> = ({
                                                 TypeOfCare:
                                                 <input
                                                     value={selectValueNewProduct.join(',')}
+                                                    readOnly
                                                     type="text"
                                                 />
                                             </label>

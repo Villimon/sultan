@@ -68,6 +68,7 @@ const CatalogLeftBlock: React.FC<PropsType> = ({
                 <h3 className="params__title">
                     ПОДБОР ПО ПАРАМЕТРАМ
                     <span
+                        data-testid='toggle-btn'
                         onClick={() => setShowCatalogFilter(!showCatalogFilter)}
                         className="params__icon-search _icons-arrow-left">
                     </span>
@@ -125,7 +126,7 @@ const CatalogLeftBlock: React.FC<PropsType> = ({
                     </div>
                     <div className="params__inputs">
                         {checkboxValue
-                            .filter(item => item.value.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+                            .filter(item => item.value.toLocaleLowerCase().includes(searchValue?.toLocaleLowerCase()))
                             .map(item =>
                                 <div key={item.id} className="params__inputs-flex">
                                     <input

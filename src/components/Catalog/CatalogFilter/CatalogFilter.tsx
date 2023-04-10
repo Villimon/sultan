@@ -22,7 +22,7 @@ const CatalogFilter: React.FC<PropsType> = ({ style, list, setFilterValue, setSe
     }
 
     return (
-        <div className={`${style}__filter`}>
+        <div data-testid='toggle-elem' className={`${style}__filter`}>
             <ul className={`${style}__list`}>
                 {list.map(item =>
                     <li

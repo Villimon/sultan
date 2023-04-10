@@ -77,7 +77,7 @@ const Catalog = () => {
             <section className='catalog'>
                 <div className="catalog__container container">
                     <div className="catalog__top">
-                        <h2 className="catalog__title">Косметика и гигиена</h2>
+                        <h2 data-testid='title-elem' className="catalog__title">Косметика и гигиена</h2>
                         <SelectSorting
                             style='catalog'
                             options={options}
